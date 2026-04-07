@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Symbiosis</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Icons CDN -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<form class="card" onsubmit="return validateForm()">
+
+<h2>Symbiosis Admission</h2>
+
+<div class="field">
+<i class="fa fa-user"></i>
+<input type="text" id="name" required>
+<label>Name</label>
+</div>
+
+<div class="field">
+<i class="fa fa-envelope"></i>
+<input type="text" id="email" required>
+<label>Email</label>
+</div>
+
+<div class="field">
+<i class="fa fa-lock"></i>
+<input type="password" id="password" required onkeyup="checkStrength()">
+<label>Password</label>
+<span class="eye" onclick="togglePassword()">👁</span>
+<div id="strength"></div>
+</div>
+
+<div class="field">
+<i class="fa fa-lock"></i>
+<input type="password" id="confirmPassword" required>
+<label>Confirm Password</label>
+</div>
+
+<div class="gender">
+<label><input type="checkbox"> Male</label>
+<label><input type="checkbox"> Female</label>
+<label><input type="checkbox"> Other</label>
+</div>
+
+<select id="course">
+<option value="">Select Course</option>
+<option>B.Tech</option>
+<option>LAW</option>
+<option>MBA</option>
+</select>
+
+<button class="btn">Register</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
